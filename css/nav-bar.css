@@ -8,6 +8,27 @@
     border-top: 1px solid #f7f7f7;
 }
 
+.nav .nav__list-link {
+    position: relative;
+}
+
+.nav .nav__badge {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-size: 10px;
+    color: white;
+    background-color: #dc5d46;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 경계선을 둥글게 만들고 싶을 때는 width의 절반크기로 주거나,
+    50%로 주면 된다. */
+    border-radius: 10px;
+}
+
 .nav .nav__list {
     display: flex;
     justify-content: space-between;

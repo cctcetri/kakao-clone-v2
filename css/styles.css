@@ -4,8 +4,14 @@
 @import 'status-bar.css';
 @import 'header.css';
 @import 'nav-bar.css';
+@import 'friend.css';
 
+/* 모든 element에 추가할 style css 사항 */
 * {
+    /* 원래는 박스 width를 300px padding을 20px 준다치면 브라우저가 width를 320px로 늘려버림
+    또한 이렇게 되면 문제는 20px 안쪽에 있던 내부 컨텐츠가 보이지 않게 됨.
+    /* 따라서 box-sizing: boder-box;를 사용! */
+    /* '브라우저야! 내가 padding 등을 추가하지만 box는 더 크게 만들지(overcompensate) 말아줘!' 라는 의미에서 사용! */
     box-sizing: border-box;
 }
 
@@ -21,4 +27,5 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
 }

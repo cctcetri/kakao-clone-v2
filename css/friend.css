@@ -1,0 +1,50 @@
+.friend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 사이에 띄어쓰기를 쓰면 그 후손 클래스에 적용시킨다는 의미이고 */
+.friend .friend__avatar {
+    width: 50px;
+    border-radius: 38%;
+}
+
+/* 사이에 띄어쓰기가 없다면 두 클래스 모두에 해당한다는 말이다. */
+.friend__avatar.g-avatar {
+    width: 70px;
+}
+
+.friend__avatar.m-avatar {
+    width: 60px;
+}
+
+.friend .friend__column {
+    display: flex;
+    align-items: center;
+}
+
+.friend .friend__avatar {
+    margin-right: 15px;
+}
+
+.friend__content .friend__name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* .friend__content 클래스 밑의 후손인 두 클래스 설정 */
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+    opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text {
+    font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+    font-size: 12px;
+}
