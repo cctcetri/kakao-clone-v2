@@ -1,0 +1,24 @@
+/* reset.css를 import하여 모든 css를 초기화시키고 0으로 만듦. */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import 'reset.css';
+@import 'status-bar.css';
+@import 'header.css';
+@import 'nav-bar.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    padding: 10px 20px;
+    color: #020202;
+    /* Open Sans 폰트가 있으면 쓰고 없으면 그 옆 폰트부터 차례로 검색하여 있으면 쓰겠다는 말. */
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+a {
+    color: inherit;
+}

@@ -1,0 +1,130 @@
+/* 이 reset.css가 모든 css값을 0으로 만들고 모든 크기를 다 똑같이 만듦. */
+/* https://meyerweb.com/eric/tools/css/reset/ 이 홈페이지에 들어가서 붉은 박스 안에 코드를 복사 붙여넣기 하면 됨. */
+/* 이걸 쓰는 이유는 브라우저 별로 css 기본 값이 다르기 때문!
+예를 들어, <h1>의 경우 chrome은 21px, firefox는 32px이다. 그래서 reset.css를 사용하여 0부터 시작하도록 만든다.
+0부터 시작하도록 하는게 싫다면, https://necolas.github.io/normalize.css/ 이 홈페이지에 들어가서 노말라이즈를 사용하여
+기준을 만들어 줄 수도 있다. 예를 들어, <h1>를 모든 브라우저에서 28px로 고정시키기.  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
